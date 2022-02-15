@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">NerdLauncher</string>
+    <string name="app_name">Launcher</string>
     <string name="icon_activity">Icon activity</string>
 </resources>

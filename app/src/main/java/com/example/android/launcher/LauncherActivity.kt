@@ -1,4 +1,4 @@
-package com.bignerdranch.android.nerdlauncher
+package com.example.android.launcher
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,24 +8,22 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bignerdranch.android.nerdlauncher.databinding.ActivitiesItemListBinding
-import com.bignerdranch.android.nerdlauncher.databinding.ActivityNerdLauncherBinding
+import com.bignerdranch.android.nerdlauncher.databinding.ActivityLauncherBinding
 
-private const val TAG = "NerdLauncherActivity"
+private const val TAG = "LauncherActivity"
 
-class NerdLauncherActivity : AppCompatActivity() {
+class LauncherActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var binding: ActivityNerdLauncherBinding
+    private lateinit var binding: ActivityLauncherBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityNerdLauncherBinding.inflate(layoutInflater)
+        binding = ActivityLauncherBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         recyclerView = binding.appRecyclerView
